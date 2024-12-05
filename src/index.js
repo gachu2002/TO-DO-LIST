@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskContainer = document.querySelector('.task-list');
     const formContainer = document.querySelector('.form-container');
     const overlay = document.querySelector('.overlay');
-    let chooseIndex = 0;
 
     const toggleHidden = (element) => {
         element.classList.toggle('hidden');
@@ -39,13 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     ui = new UI(exampleTasks.getTasks());
                     break;
                 case "today":
-                    const todayTasks = exampleTasks.getTasksByDueDate(new Date());
+                    { const todayTasks = exampleTasks.getTasksByDueDate(new Date());
                     ui = new UI(todayTasks);
-                    break;
+                    break; }
                 case "week":
-                    const weekTasks = exampleTasks.getTasksByDifferenceDueDate(new Date() , 7);
+                    { const weekTasks = exampleTasks.getTasksByDifferenceDueDate(new Date() , 7);
                     ui = new UI(weekTasks);
-                    break;
+                    break; }
             }
             ui.renderList();
         }
