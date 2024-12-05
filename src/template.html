@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <h2 class="item-header">Home</h2>
+                <ul class="sub-list">
+                    <li id="all" class="sub-item" tabindex="0" autofocus>All</li>
+                    <li id="today" class="sub-item" tabindex="0">Today</li>
+                    <li id="week" class="sub-item" tabindex="0">Week</li>
+                </ul>
+            </li>
+
+
+            <li class="nav-item">
+                <h2 class="item-header">Projects</h2>
+                <ul class="sub-list">
+                </ul>
+            </li>  
+
+            <li class="nav-item">
+                <h2 class="item-header">Notes</h2>
+            </li>
+        </ul>
+
+        <button class="add-form-btn" >+</button>
+    </nav>
+
+    <main>
+        <div class="list-container">
+            <h2 class="list-header">List items</h2>
+            <ul class="task-list">
+                <li class="task">task 1</li>
+                <li class="task">task 1</li>
+                <li class="task">task 1</li>
+                <li class="task">task 1</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Background Overlay -->
+    <div class="hidden overlay"></div>
+    
+    <div class="hidden form-container"></div>
+
+    <footer>
+        <p>Created by <a href="https://github.com">Le Thanh Nguyen</a></p>
+    </footer>
+</body>
+</html>

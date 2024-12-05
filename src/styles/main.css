@@ -1,0 +1,140 @@
+/* Set global variables */
+:root {
+    --text-color: #fff;
+    --background-color-one:  rgb(49, 55, 51);
+    --background-color-two: rgb(25, 33, 28);
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Set the body styles */
+body {
+
+    position: relative;
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color-one);
+    color: var(--text-color);
+
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr;
+    grid-template-rows: 100px minmax(400px, 1fr) 50px;
+
+    min-height: 100vh;
+}
+
+/* Set the header styles */
+header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: var(--background-color-two);
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+}
+
+/* Set the nav styles */
+nav {
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: rgb(54, 83, 65);
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+    margin-bottom: 40px;
+}
+
+.nav-list .item-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sub-item {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.sub-item:hover, .sub-item:focus {
+    background-color: rgb(31, 46, 37);
+    border-radius: 5px;
+    outline: none;
+    transform: scale(1.05);
+}
+
+.add-form-btn {
+    appearance: none;
+    font-size: 3rem;
+    width: 60px;
+    height: 60px;
+
+    background-color: rgb(32, 160, 128);
+    color: var(--text-color);
+    border: none;
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.add-form-btn:hover {
+    background-color: rgb(26, 130, 104);
+    transform: scale(1.05) rotate(45deg);
+}
+
+/* Set the main content styles */
+main {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    padding-left: 10px;
+}
+
+.list-container {
+    padding: 1.5rem;
+    background-color: rgb(58, 80, 67);
+    height: 100%;
+    width: max(75%, 600px);
+    margin: auto;
+}
+
+.list-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Set the footer styles */
+footer {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    background-color: var(--background-color-two);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
